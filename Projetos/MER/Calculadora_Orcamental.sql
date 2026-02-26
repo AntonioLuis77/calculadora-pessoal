@@ -1,20 +1,18 @@
 CREATE TABLE utilizador (
-    ID_Utilizador INT PRIMARY AUTO_INCREMENT ,
+    id INT NOT NULL PRIMARY AUTO_INCREMENT ,
     nome varchar(30),
     email varchar(30),
     senha varchar(255)
 );
 
+
 CREATE TABLE Categoria (
-    ID_Categoria INT PRIMARY AUTO_INCREMENT,
+    id INT PRIMARY AUTO_INCREMENT,
     nome varchar(100),
     descricao varchar(100),
-    ID_Utilizador int NOT NULL,
-    FOREIGN KEY(ID_Utilizador)
-REFERENCES Utilizador(ID_Utilizador)
-
+    id_utilizador int NOT NULL,
+    FOREIGN KEY(id_utilizador) REFERENCES Utilizador(id)
 );
-
 
 CREATE TABLE Receita (
     ID_Receita INT PRIMARY AUTO_INCREMENT,
@@ -42,5 +40,6 @@ REFERENCES Utilizador(ID_Utilizador),
 REFERENCES Categoria(ID_Categoria) 
 
 );
+
 
 
