@@ -19,7 +19,7 @@ CREATE TABLE Receita (
     valor decimal (10 , 2 ) NOT NULL,
     data date NOT NULL,
     descricao varchar(100), 
-    FOREIGN KEY (id)
+    FOREIGN KEY (id_Utilizador)
 REFERENCES Utilizador(id)
 
 );
@@ -31,12 +31,13 @@ CREATE TABLE Despesas (
     valor decimal(10 , 2) NOT NULL,
     data date NOT NULL,
     descricao varchar(100),
-    FOREIGN KEY (id)
+    FOREIGN KEY (id_Utilizador)
 REFERENCES Utilizador(id),
-    FOREIGN KEY (id)
+    FOREIGN KEY (id_Categoria)
 REFERENCES Categoria(id) 
 
 );
+
 
 
 
