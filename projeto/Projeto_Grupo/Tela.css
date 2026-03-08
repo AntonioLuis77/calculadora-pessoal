@@ -1,0 +1,79 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(22, 5, 5);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        input, select, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #1fae14;
+            color: rgb(28, 102, 124);
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .saldo {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #030610;
+            color: white;
+        }
+
+        .receita {
+            color: green;
+        }
+
+        .despesa {
+            color: red;
+        }
+        footer {
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        footer a { color: #aaa; text-decoration: none; transition: 0.3s; }
+        footer a:hover { color: #00d2ff; }
