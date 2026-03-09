@@ -501,12 +501,6 @@ button:hover {
 
 
 
-.estatistica-card h2 {
-    color: #2563eb;
-    margin-bottom: 5px;
-    font-size: 22px;
-}
-
 .estatistica-card p {
     font-size: 14px;
     color: #64748b;
@@ -688,4 +682,5 @@ ADER CLEAN */
         color: #040c13;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: medium;
+
     }
