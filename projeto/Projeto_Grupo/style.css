@@ -201,11 +201,6 @@ button:hover {
     color: #2563eb;
 }
 
-.topic-card h4 {
-    margin-bottom: 5px;
-    color: #1e3a8a;
-}
-
 .topic-card p {
     font-size: 14px;
     color: #64748b;
@@ -684,3 +679,4 @@ ADER CLEAN */
         font-size: medium;
 
     }
+
