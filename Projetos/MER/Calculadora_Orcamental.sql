@@ -15,7 +15,7 @@ CREATE TABLE Categoria (
 );
 
 CREATE TABLE Receita (
-    id int NOT NULL PRIMARY AUTO_INCREMENT,
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     valor decimal (10 , 2 ) NOT NULL,
     data date NOT NULL,
     descricao varchar(100), 
@@ -26,7 +26,7 @@ CREATE TABLE Receita (
 
 
 CREATE TABLE Despesas (
-    id int NOT NULL PRIMARY AUTO_INCREMENT,
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     valor decimal(10 , 2) NOT NULL,
     data date NOT NULL,
     descricao varchar(100),
@@ -34,6 +34,7 @@ CREATE TABLE Despesas (
     FOREIGN KEY (id_Categoria) REFERENCES Categoria(id) 
 
 );
+
 
 
 
