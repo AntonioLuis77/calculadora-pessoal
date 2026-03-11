@@ -1,5 +1,5 @@
 CREATE TABLE utilizador (
-    id int NOT NULL PRIMARY AUTO_INCREMENT ,
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT ,
     nome varchar(30),
     email varchar(30),
     senha varchar(255)
@@ -7,7 +7,7 @@ CREATE TABLE utilizador (
 
 
 CREATE TABLE Categoria (
-    id int NOT NULL PRIMARY AUTO_INCREMENT,
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nome varchar(100),
     descricao varchar(100),
     id_utilizador int NOT NULL,
@@ -34,6 +34,7 @@ CREATE TABLE Despesas (
     FOREIGN KEY (id_Categoria) REFERENCES Categoria(id) 
 
 );
+
 
 
 
